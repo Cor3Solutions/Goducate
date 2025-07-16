@@ -21,6 +21,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -28,9 +29,17 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
 </head>
 
 <body>
@@ -72,27 +81,11 @@
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="causes.html" class="nav-item nav-link">Causes</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="service.html" class="dropdown-item">Service</a>
-                            <a href="donate.html" class="dropdown-item">Donate</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div>
+                    <a href="whatwedo.html" class="nav-item nav-link">What we do</a>
+                    <a href="community.html" class="nav-item nav-link">Community</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-outline-primary py-2 px-3" href="">
-                        Donate Now
-                        <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                            <i class="fa fa-arrow-right"></i>
-                        </div>
-                    </a>
-                </div>
+
             </div>
         </nav>
     </div>
@@ -166,58 +159,41 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- Facebook SDK -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
     </script>
 
-    <!-- Facebook Section -->
-    <section class="  py-5">
+    <section class="py-5">
         <div class="container">
-            <div class="row justify-content-between align-items-center g-5">
-
-                <!-- Left Text -->
-                <div class="col-lg-5">
-                    <div>
-                        <h2 class="fw-bold text-primary mb-3">Stay Connected</h2>
-                        <p class="text-muted">
-                            Follow our official Facebook page to see the latest updates, community activities, and
-                            stories from the field. We post regularly — don’t miss out!
-                        </p>
-                    </div>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold text-primary mb-3">Stay Connected</h2>
+                    <p class="text-muted mb-0">
+                        Follow us on Facebook to get updates, stories from the field, and learn more about how Goducate
+                        is helping transform lives across Asia.
+                    </p>
                 </div>
 
-                <!-- Right Facebook Embed -->
                 <div class="col-lg-6">
-                    <div class="shadow rounded-4 p-3 bg-white">
-                        <div class="fb-page" data-href="https://www.facebook.com/LFTelesforo" data-tabs="timeline"
-                            data-width="100%" data-height="500" data-small-header="false"
-                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/LFTelesforo" class="fb-xfbml-parse-ignore">
-                                <a href="https://www.facebook.com/LFTelesforo">LF Telesforo</a>
-                            </blockquote>
+                    <div class="bg-white p-2 rounded shadow">
+                        <div class="fb-page" data-href="https://www.facebook.com/Goducate.Helping.Needy.Asians"
+                            data-tabs="timeline" data-width="400" data-height="500" data-small-header="false"
+                            data-hide-cover="false" data-show-facepile="true">
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section class="py-5" style="background-color: #d7ffd5;">
         <div class="container">
-            <div class="row align-items-center">
-                <!-- Right: Animated Globe -->
-                <div class="col-lg-6 text-center">
-                    <div class="globe-wrapper position-relative mx-auto">
-                        <div class="glow-circle"></div>
-                        <img src="img/globe.png" alt="Globe" class="globe-img">
-                    </div>
-                </div>
+            <h2 class="fw-bold text-dark">Where We Are</h2>
+
+            <div class="row align-items-center flex-column-reverse flex-lg-row text-center text-lg-start">
                 <!-- Left: Text -->
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="fw-bold text-primary">Where We Are</h2>
-                    <p class="text-muted">
+                    <p class="text-dark mb-0">
                         Goducate is actively working across Southeast Asia to uplift communities and empower
                         individuals.
                         <br><br>
@@ -228,13 +204,19 @@
                         🇲🇾 Malaysia
                     </p>
                 </div>
+
+                <!-- Right: Globe Image -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="globe-wrapper position-relative mx-auto">
+                        <div class="glow-circle"></div>
+                        <img src="img/globe.png" alt="Globe" class="globe-img img-fluid">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-
-    <!-- About Start -->
+    <!-- What we do -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -248,78 +230,68 @@
                     </div>
 
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">What we do
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s"><br><br>
+                    <h2 class="fw-bold text-dark mb-4" style="font-size: 2rem;">What we do</h2>
+                    <h1 class="display-6 mb-5">GO Community</h1>
+                    <p class="mb-5"> We help the needy communities in Asia by equipping them with skills that will
+                        provide a
+                        brighter future and a mindset to help others in the long run.</p>
+                    <a class="btn btn-primary py-2 px-3 me-3" href="whatwedo.html">
+                        Learn More
+                        <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                            <i class="fa fa-arrow-right"></i>
                         </div>
-                        <h1 class="display-6 mb-5">GO Community</h1>
-                        <p class="mb-5"> We help the needy communities in Asia by equipping them with skills that will
-                            provide a
-                            brighter future and a mindset to help others in the long run.</p>
-                        <a class="btn btn-primary py-2 px-3 me-3" href="">
-                            Learn More
-                            <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                        <a class="btn btn-outline-primary py-2 px-3" href="">
-                            Contact Us
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                    </div>
+                    </a>
+                    <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
+                        Contact Us
+                        <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
+    <!-- What we do -->
 
     <!-- Causes Start -->
-    <div class="container-xxl bg-light my-5 py-5">
+    <div class="container-xxl my-5 py-5">
         <div class="container py-5">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Feature Causes</div>
                 <h1 class="display-6 mb-5">Every Child Deserves The Opportunity To Learn</h1>
             </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-lg-12 col-md-12
- wow fadeInUp" data-wow-delay="0.1s">
-                    <div
-                        class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
-                                <small>YOUR SUPPORT</small>
+                <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative rounded overflow-hidden"
+                        style="min-height: 500px; background: url('img/HANDS.png') center center / cover no-repeat;">
+
+                        <!-- Dark Overlay -->
+                        <div class="position-absolute top-0 start-0 w-100 h-100"
+                            style="background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+
+                        <!-- Text Content -->
+                        <div class="position-relative text-white text-center p-5" style="z-index: 2;">
+                            <div class="d-inline-block text-light fs-2 fw-bold mb-4">
+                                YOUR SUPPORT
                             </div>
-                            <h5 class="mb-3"> will allow us to help more families in need</h5>
-                            <p>
+
+                            <h4 class="mb-4 fw-bold">Will allow us to help more families in need</h4>
+                            <p class="fs-5 mb-0">
                                 Goducate reaches out to thousands of children and their families each year, but more
                                 need our help.
                                 <br><br>
-
                                 Yet, due to insufficient resources and funds to meet the needs of everyone in the
                                 communities,
                                 we have been limited in our giving.
                                 <br><br>
-
                                 By supporting our work through sponsorships or being a voice in your community,
                                 you can help us make a sustainable difference to one more child's life and their future.
                                 <br><br>
-
-                                Join us in our mission today
+                                <strong class="fs-5">Join us in our mission today.</strong>
                             </p>
+
                         </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="img/HANDS.png" alt="">
-                            <div class="causes-overlay">
-                                <a class="btn btn-outline-primary" href="">
-                                    Read More
-                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                        <i class="fa fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -329,53 +301,43 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 bg-light">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">What We Do</div>
-                <h1 class="display-6 mb-5">Learn More What We Do And Get Involved</h1>
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                <h1 class="display-6 mb-4">To Date, We Have Been Privileged to Help</h1>
             </div>
             <div class="row g-4 justify-content-center">
+                <!-- Column 1 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
-                        <h4 class="mb-3">Child Education</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero
-                            dolor duo.</p>
-                        <a class="btn btn-outline-primary px-3" href="">
-                            Learn More
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5 shadow-sm rounded">
+                        <div class="mb-4">
+                            <i class="fas fa-utensils fa-3x text-primary"></i>
+                        </div>
+                        <h2 class="text-primary mb-3">1,000+</h2>
+                        <p class="mb-2">Children reached through our feeding programs</p>
+                        <p class="mb-2">Supported physically, mentally, and emotionally</p>
                     </div>
                 </div>
+                <!-- Column 2 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
-                        <h4 class="mb-3">Medical Treatment</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero
-                            dolor duo.</p>
-                        <a class="btn btn-outline-primary px-3" href="">
-                            Learn More
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5 shadow-sm rounded">
+                        <div class="mb-4">
+                            <i class="fas fa-user-shield fa-3x text-primary"></i>
+                        </div>
+                        <h2 class="text-primary mb-3">50,000+</h2>
+                        <p class="mb-2">Civil servants trained and empowered</p>
+                        <p class="mb-2">Provided with leadership, care, and community-building skills</p>
                     </div>
                 </div>
+                <!-- Column 3 -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
-                        <h4 class="mb-3">Pure Drinking Water</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero
-                            dolor duo.</p>
-                        <a class="btn btn-outline-primary px-3" href="">
-                            Learn More
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5 shadow-sm rounded">
+                        <div class="mb-4">
+                            <i class="fas fa-users fa-3x text-primary"></i>
+                        </div>
+                        <h2 class="text-primary mb-3">470+</h2>
+                        <p class="mb-2">Single and married mothers supported</p>
+                        <p class="mb-2">Provided with livelihood, training, and holistic care</p>
                     </div>
                 </div>
             </div>
@@ -383,11 +345,76 @@
     </div>
     <!-- Service End -->
 
+    <!-- Why We Do It Section - White Background -->
+    <div class="container-xxl py-5 bg-white">
+        <div class="container">
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold text-primary mb-3">Why We Do It</h2>
+                    <p class="text-muted">
+                        Millions of needy people in Asia have no access to the basic necessities of life and a useful
+                        education. They are at risk of diseases and vices, and lacking hope and purpose in their lives.
+                        A timely help can give them a chance of progress and an opportunity to break away from the
+                        poverty cycle.
+                    </p>
+                    <p class="text-muted fw-semibold">
+                        With your support, we will be able to make a difference in their lives.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="img/why-we-do-it.jpg" alt="Why We Do It" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Governor Testimonial Section -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <!-- Green Box -->
+            <div class="p-4 p-md-5 shadow rounded" style="background-color: #d7ffd5;">
+                <div class="row align-items-center g-4">
+                    <!-- Governor Image & Info -->
+                    <div class="col-md-3 text-center">
+                        <img src="img/governor.png" alt="Governor Arthur Defensor Jr."
+                            class="img-fluid rounded-circle shadow-sm mb-3" style="max-width: 150px;">
+                        <h6 class="mb-1 fw-bold">Arthur Defensor Jr.</h6>
+                        <small class="text-muted d-block mb-2">Governor, Iloilo Province</small>
+                        <img src="img/logo (1).png" alt="Iloilo Logo" style="height: 40px;">
+                    </div>
+
+                    <!-- Testimonial Text -->
+                    <div class="col-md-9">
+                        <h4 class="fw-bold text-primary mb-3">Hear It From Our Partners</h4>
+                        <p class="text-muted mb-0" style="white-space: pre-line;">
+                            Through the years, Camp Goducate Phils., Inc. has touched many lives through its various
+                            community development programs not only in Iloilo province but in other parts of the
+                            Philippines and all over Asia.
+
+                            Despite the challenges of the COVID-19 pandemic, Camp Goducate Phils., Inc. has managed to
+                            train world-class Community Development Workers (CDWs) and continued to provide trainings
+                            and educational programs for various sectors. Moreover, I commend Camp Goducate for
+                            embarking on a nationwide Feeding and Educational program to help our less fortunate
+                            citizens.
+
+                            Indeed, our society needs organizations like Camp Goducate that bring help and hope to the
+                            needy and empower ordinary people to create positive change. It is my wish that Camp
+                            Goducate Phils., Inc. will continue to touch more lives through your various community
+                            development programs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Testimonial</div>
+                <h2 class="fw-bold text-dark mb-4" style="font-size: 2rem;">Testimonial</h2>
                 <h1 class="display-6 mb-4">Impactful Stories from the Community</h1>
                 <p class="text-muted">Hear from the students, parents, and scholars who have directly benefited from
                     Goducate's programs.</p>
@@ -524,6 +551,28 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".testimonial-carousel").owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 6000,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    992: { items: 3 }
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
