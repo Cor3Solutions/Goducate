@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #ff6f0f;
+  --primary: #0858e2;
   --secondary: #fff0e6;
   --light: #f8f8f9;
   --dark: #001d23;
@@ -346,34 +346,7 @@
   color: var(--primary);
 }
 
-/* Container for globe */
-.globe-wrapper {
-  width: 320px;
-  height: 320px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-/* Glowing circle behind the globe */
-.glow-circle {
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(8, 88, 226, 0.2), transparent 70%);
-  animation: pulse 4s ease-in-out infinite;
-  z-index: 1;
-}
-
-/* Globe image */
-.globe-img {
-  width: 300px;
-  z-index: 2;
-  animation: spin 20s linear infinite;
-}
+ 
 
 .team-scroll::-webkit-scrollbar {
   height: 6px;
@@ -405,4 +378,35 @@
   object-fit: cover;
 }
 
+.carousel-caption {
+  bottom: 0;
+  padding-bottom: 3rem;
+}
 
+.carousel-caption h1,
+.carousel-caption p {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767.98px) {
+  .carousel-caption {
+    position: static;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    margin-top: -4rem;
+    text-align: center;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.95rem;
+  }
+
+  .carousel-item img {
+    object-fit: contain;
+    height: auto;
+  }
+}
