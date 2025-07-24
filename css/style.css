@@ -346,8 +346,6 @@
   color: var(--primary);
 }
 
- 
-
 .team-scroll::-webkit-scrollbar {
   height: 6px;
 }
@@ -418,4 +416,13 @@
     height: 100%;
     object-fit: cover;
   }
+}
+
+.globe-hover {
+  transition: transform 0.4s ease;
+  transform-origin: center;
+}
+
+.globe-hover:hover {
+  transform: scale(1.15);
 }

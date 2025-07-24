@@ -51,7 +51,6 @@
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar row gx-0 align-items-center d-none d-lg-flex"
@@ -71,7 +70,6 @@
                         class="fab fa-instagram"></i></a>
             </div>
         </div>
-
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
@@ -97,7 +95,6 @@
     </div>
     <!-- Navbar End -->
 
-
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -114,7 +111,7 @@
                                     <p class="fs-5 text-white-50 mb-4 animated slideInUp">
                                         Empowering communities across Asia through education, outreach, and sustainable
                                         development.
-                                    </p> 
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -122,32 +119,36 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img class="w-100" src="img/GO.png" alt="Image">
-                    <div class="carousel-caption">
+                    <img class="w-100 img-fluid" src="img/GO.png" alt="Image" style="object-fit: cover; height: 100vh;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown">GODUCATE is a NON-PROFIT
-                                        ORGANIZATION</h1>
-                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">dedicated to working closely
-                                        with the poor communities in Asia to create a sustainable society by tackling
-                                        key poverty issues, providing quality learning opportunities and emphasizing on
-                                        the need to pay it forward.</p> 
+                                <div class="col-lg-8 bg-dark bg-opacity-50 p-4 rounded">
+                                    <h1 class="display-5 text-white mb-3">GODUCATE is a NON-PROFIT ORGANIZATION</h1>
+                                    <p class="fs-6 text-white-50 mb-4">
+                                        Dedicated to working closely with poor communities in Asia to create a
+                                        sustainable society by tackling
+                                        key poverty issues, providing quality learning opportunities, and emphasizing
+                                        the need to pay it forward.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div> 
+                
                 <div class="carousel-item">
                     <img class="w-100" src="img/GO.png" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown">....</h1>
-                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">...</p>
-                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Join the Movement</h1>
+                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">
+                                        Be part of a growing network of volunteers, leaders, and changemakers who are
+                                        transforming lives and building resilient communities across Asia.
+                                    </p>
+                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="about.html">
                                         Learn More
                                         <div
                                             class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
@@ -159,6 +160,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -179,20 +181,26 @@
 
     <section class="py-5">
         <div class="container">
-            <div class="row align-items-center g-5">
+            <div class="row align-items-center g-4">
+
+                <!-- Left Column (Text) -->
                 <div class="col-lg-6">
                     <h2 class="fw-bold text-primary mb-3">Stay Connected</h2>
                     <p class="text-muted mb-0">
                         Follow us on Facebook to get updates, stories from the field, and learn more about how Goducate
                         is helping transform lives across Asia.
                     </p>
+                    <a href="https://www.facebook.com/goducateluzon" target="_blank" class="btn btn-primary mt-3">
+                        Visit Our Page <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="bg-white p-2 rounded shadow">
-                        <div class="fb-page" data-href="https://www.facebook.com/Goducate.Helping.Needy.Asians"
-                            data-tabs="timeline" data-width="400" data-height="500" data-small-header="false"
-                            data-hide-cover="false" data-show-facepile="true">
+                <!-- Right Column (Facebook Plugin) -->
+                <div class="col-lg-4">
+                    <div class="bg-white p-3 rounded shadow fb-responsive-container">
+                        <div class="fb-page" data-href="https://www.facebook.com/goducateluzon" data-tabs="timeline"
+                            data-width="" data-height="500" data-small-header="false" data-hide-cover="true"
+                            data-show-facepile="true">
                         </div>
                     </div>
                 </div>
@@ -210,21 +218,11 @@
                 Goducate is actively working across Southeast Asia to uplift communities and empower individuals.
             </p>
 
-            <!-- Globe Image with Zoom on Hover -->
-            <div class="d-inline-block" style="overflow: hidden; border-radius: 12px;">
-                <img src="img/index/globe.png" alt="Globe" class="img-fluid"
-                    style="max-width: 280px; transition: transform 0.4s ease; display: block;">
-            </div>
+            <!-- Globe Image -->
+            <img src="img/index/globe.png" alt="Globe" class="img-fluid globe-hover"
+                style="max-width: 300px; display: block; margin: 0 auto;">
         </div>
-
-        <style>
-            /* Zoom effect on hover */
-            .d-inline-block:hover img {
-                transform: scale(1.15);
-            }
-        </style>
     </section>
-
 
     <!-- What we do -->
     <div class="container-xxl py-5">
@@ -238,7 +236,6 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s"><br><br>
                     <h2 class="fw-bold text-dark mb-4" style="font-size: 2rem;">What we do</h2>
@@ -299,16 +296,13 @@
                                 <br><br>
                                 <strong class="fs-5">Join us in our mission today.</strong>
                             </p>
-
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Causes End -->
-
 
     <!-- Service Start -->
     <div class="container-xxl py-5 bg-light">
@@ -519,8 +513,6 @@
     </div>
     <!-- Testimonial End -->
 
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -539,7 +531,7 @@
                     <h5 class="text-light mb-4">Contact</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, Asia Region</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+63 912 345 6789</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@goducate.org</p>
+                    <p><i class="fa fa-envelope me-3"></i>reachus@goducate.org</p>
                 </div>
 
                 <!-- Column 3: Social Media -->
@@ -571,11 +563,8 @@
     </div>
     <!-- Footer End -->
 
-
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
