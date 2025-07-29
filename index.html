@@ -135,8 +135,8 @@
                             </div>
                         </div>
                     </div>
-                </div> 
-                
+                </div>
+
                 <div class="carousel-item">
                     <img class="w-100" src="img/GO.png" alt="Image">
                     <div class="carousel-caption">
@@ -317,7 +317,7 @@
                         <div class="mb-4">
                             <i class="fas fa-utensils fa-3x text-primary"></i>
                         </div>
-                        <h2 class="text-primary mb-3">1,000+</h2>
+                        <h2 class="text-primary mb-3 counter" data-target="1000" data-suffix="+">0</h2>
                         <p class="mb-2">Children reached through our feeding programs</p>
                         <p class="mb-2">Supported physically, mentally, and emotionally</p>
                     </div>
@@ -328,7 +328,7 @@
                         <div class="mb-4">
                             <i class="fas fa-user-shield fa-3x text-primary"></i>
                         </div>
-                        <h2 class="text-primary mb-3">50,000+</h2>
+                        <h2 class="text-primary mb-3 counter" data-target="50000" data-suffix="+">0</h2>
                         <p class="mb-2">Civil servants trained and empowered</p>
                         <p class="mb-2">Provided with leadership, care, and community-building skills</p>
                     </div>
@@ -339,7 +339,7 @@
                         <div class="mb-4">
                             <i class="fas fa-users fa-3x text-primary"></i>
                         </div>
-                        <h2 class="text-primary mb-3">470+</h2>
+                        <h2 class="text-primary mb-3 counter" data-target="470" data-suffix="+">0</h2>
                         <p class="mb-2">Single and married mothers supported</p>
                         <p class="mb-2">Provided with livelihood, training, and holistic care</p>
                     </div>
@@ -529,8 +529,9 @@
                 <!-- Column 2: Contact Info -->
                 <div class="col-lg-4 col-md-6">
                     <h5 class="text-light mb-4">Contact</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, Asia Region</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+63 912 345 6789</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Singapore Head Office 360 Dunearn Rd, Singapore
+                    299552</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+63 000 000 0000</p>
                     <p><i class="fa fa-envelope me-3"></i>reachus@goducate.org</p>
                 </div>
 
@@ -567,19 +568,19 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints/lib/jquery.waypoints.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
@@ -598,6 +599,39 @@
                 }
             });
         });
+
+        const counters = document.querySelectorAll('.counter');
+        const animateCounter = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            const suffix = counter.getAttribute('data-suffix') || '';
+
+            const speed = 200;
+            const increment = Math.ceil(target / speed);
+
+            const updateCount = () => {
+                let count = +counter.innerText.replace(/\D/g, '');
+
+                if (count < target) {
+                    count += increment;
+                    counter.innerText = count.toLocaleString();
+                    setTimeout(updateCount, 10);
+                } else {
+                    counter.innerText = target.toLocaleString() + suffix;
+                }
+            };
+            updateCount();
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.6 });
+
+        counters.forEach(counter => observer.observe(counter));
     </script>
 
 </body>
