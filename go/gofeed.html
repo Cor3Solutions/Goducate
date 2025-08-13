@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Goducate | Go Sports</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/goducatelogo.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <img src="../img/goducatelogo.png" alt="Goducate Logo"
+            style="max-width: 150px; animation: pulse 1.5s infinite;">
+    </div>
+
+    <!-- Navbar -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5">
+            <a href="../index.html" class="navbar-brand ms-4 ms-lg-0">
+                <img src="../img/goducatelogo.png" alt="Goducate Logo" height="100">
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="../index.html" class="nav-item nav-link">Home</a>
+                    <a href="../about.html" class="nav-item nav-link">About</a>
+                    <a href="../whatwedo.html" class="nav-item nav-link">What we do</a>
+                    <a href="../community.html" class="nav-item nav-link">Community</a>
+                    <a href="../contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s" style="
+    background: url('../img/go/gofeed.jpg') center center / cover no-repeat;
+    height: 500px;">
+        <div class="container text-center d-flex flex-column justify-content-center h-100">
+            <h1 class="display-4 text-white animated slideInDown mb-4">GO FEED</h1>
+            <p class="fs-5 text-white mb-4">Nourishing bodies, uplifting communities, and sharing hope through food.</p>
+        </div>
+    </div>
+
+    <!-- About Go Feed -->
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <img src="../img/go/gofeed2.jpg" alt="Go Feed Activities" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="mb-4">About Go Feed</h2>
+                <p>
+                    Go Feed is Goducate’s mission to fight hunger and bring joy to communities by providing nutritious
+                    meals
+                    and fostering compassion. We believe that feeding the body also nourishes the spirit.
+                </p>
+                <ul>
+                    <li>Community feeding programs</li>
+                    <li>Nutrition and wellness education</li>
+                    <li>Partnerships with local farmers & donors</li>
+                    <li>Special feeding events for children</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"></script>
+
+    <!-- Facebook Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #fff8e1 0%, #ffe082 100%);">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Text -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h2 class="fw-bold text-warning mb-3">
+                        <i class="fab fa-facebook-square me-2"></i> Follow Go Feed
+                    </h2>
+                    <p class="text-dark mb-3 fs-5">
+                        Get updates on our feeding programs, volunteer opportunities, and stories of lives transformed.
+                        Watch videos and see how you can be part of the mission.
+                    </p>
+                    <a href="https://www.facebook.com/goducategofeed" target="_blank"
+                        class="btn btn-warning btn-lg px-4 shadow-sm text-white">
+                        Visit Our Facebook Page <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <!-- FB Plugin -->
+                <div class="col-lg-4">
+                    <div class="bg-white p-3 rounded shadow fb-responsive-container">
+                        <div class="fb-page" data-href="https://www.facebook.com/goducategofeed" data-tabs="timeline"
+                            data-width="" data-height="500" data-small-header="false" data-hide-cover="false"
+                            data-show-facepile="true">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <div class="container py-5">
+        <h2 class="mb-4 text-center">Contact Go Feed</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <p><i class="fa fa-envelope me-2"></i><a href="mailto:gofeed.ph@gmail.com">gofeed.ph@gmail.com</a></p>
+                <p><i class="fab fa-facebook me-2"></i><a href="https://www.facebook.com/GoducateFeed"
+                        target="_blank">facebook.com/gofeed.ph</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <img src="../img/goducatelogo.png" alt="Goducate Logo" style="max-width: 180px;" class="mb-3">
+                    <p>Goducate is committed to helping Asians help themselves by empowering communities through
+                        education and support.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-light mb-4">Contact</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Singapore Head Office</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+63 000 000 0000</p>
+                    <p><i class="fa fa-envelope me-3"></i>reachus@goducate.org</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-light mb-4">Connect With Us</h5>
+                    <div class="d-flex">
+                        <a class="btn btn-square btn-outline-light me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light me-2" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="container-fluid copyright text-white-50 border-top py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="text-white" href="https://cor3-solutions.vercel.app/">Cor3 Solutions</a>, All
+                        Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

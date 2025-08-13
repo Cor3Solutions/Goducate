@@ -426,3 +426,96 @@
 .globe-hover:hover {
   transform: scale(1.15);
 }
+
+/* Marquee container */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Moving content */
+.marquee-content {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+
+/* Platform item styles */
+.platform-item {
+  display: inline-block;
+  text-align: center;
+  flex: 0 0 calc(100% / 5);
+  /* Show exactly 3 at a time */
+  box-sizing: border-box;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.platform-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 1px;
+  /* white inner border spacing */
+  background-color: white;
+  /* inner ring */
+  border: 6px solid transparent;
+  background-image: linear-gradient(white, white),
+    /* Inner ring */ linear-gradient(135deg, #00b4d8, #38b000);
+  /* Gradient border */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-item:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.platform-item p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.fb-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+.fb-container iframe {
+  width: 100% !important;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+#spinner img {
+  animation: pulse 3s infinite ease-in-out;
+}
