@@ -196,34 +196,36 @@
 
     <!-- Facebook SDK -->
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
-    </script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
 
-    <section class="py-5">
+    <section class="py-5" style="background: linear-gradient(135deg, #f5faff, #e6f5ec);">
         <div class="container">
-            <div class="row align-items-center g-4">
+            <div class="row align-items-center g-5">
 
                 <!-- Left Column (Text) -->
                 <div class="col-lg-6">
                     <h2 class="fw-bold text-primary mb-3">Stay Connected</h2>
-                    <p class="text-muted mb-0">
-                        Follow us on Facebook to get updates, stories from the field, and learn more about how Goducate
-                        is helping transform lives across Asia.
+                    <p class="text-muted fs-5 mb-4">
+                        Follow us on Facebook to get updates, inspiring stories from the field, and see how Goducate is
+                        transforming lives across Asia.
                     </p>
-                    <a href="https://www.facebook.com/goducateluzon" target="_blank" class="btn btn-primary mt-3">
+                    <a href="https://www.facebook.com/goducateluzon" target="_blank"
+                        class="btn btn-primary btn-lg shadow-sm rounded-pill px-4">
                         Visit Our Page <i class="fa fa-arrow-right ms-2"></i>
                     </a>
                 </div>
 
                 <!-- Right Column (Facebook Plugin) -->
-                <div class="col-lg-4" style="background-color: #d7ffd5;">
-                    <div class="bg-white p-3 rounded shadow fb-responsive-container">
+                <div class="col-lg-4">
+                    <div class="p-3 bg-white rounded shadow-lg" style="border: 3px solid #d7ffd5; border-radius: 15px;">
                         <div class="fb-page" data-href="https://www.facebook.com/goducateluzon" data-tabs="timeline"
-                            data-width="" data-height="500" data-small-header="false" data-hide-cover="false"
+                            data-width="500" data-height="500" data-small-header="false" data-hide-cover="false"
                             data-show-facepile="true">
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -438,141 +440,148 @@
         </div>
     </div>
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <section class="py-5" style="background: linear-gradient(135deg, #f3f8ff 0%, #e6f0ff 100%);">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h2 class="fw-bold text-dark mb-4" style="font-size: 2rem;">Testimonial</h2>
-                <h1 class="display-6 mb-4">Impactful Stories from the Community</h1>
-                <p class="text-muted">Hear from the students, parents, and scholars who have directly benefited from
-                    Goducate's programs.</p>
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary mb-3">
+                    💬 Scholarship Program Testimonials
+                </h2>
+                <p class="text-muted fs-5">
+                    Real stories of transformation from Goducate scholars.
+                </p>
+                <div style="width: 60px; height: 4px; background: #0d6efd; margin: 10px auto; border-radius: 2px;">
+                </div>
             </div>
 
-            <div class="position-relative">
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+            <!-- Swiper Container -->
+            <div class="swiper testimonialSwiper pb-5">
+                <div class="swiper-wrapper">
 
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-item text-center">
-                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-3" src="img/index/1.png"
-                            style="width: 100px; height: 100px;">
-                        <div class="testimonial-text rounded text-center p-4 bg-white shadow-sm">
-                            <p class="mb-3">“The feeding program was a great help to my child as well as the parents. As
-                                a result, my child's body had improved, and most of all, I could see them eating
-                                vegetables and they became healthy.”</p>
-                            <h5 class="mb-0">Juliet Jannario</h5>
-                            <small class="text-muted d-block">Mother of Beneficiary</small>
-                            <small class="text-muted">Mabacon Feeding Area</small>
+                    <!-- Slide Template -->
+                    <!-- Slide Template -->
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden"
+                            style="background-color: #d7ffd5;">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=7569854746369721&show_text=false&autoplay=false"
+                                    style="border: none;" allowfullscreen
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                </iframe>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold text-primary">Alyssa O. Guatche</h5>
+                                <p class="text-muted small mb-0">
+                                    2nd-year BS Entrepreneurship<br>
+                                    Polytechnic University of the Philippines, Calauan Campus
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-item text-center">
-                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-3" src="img/index/2.png"
-                            style="width: 100px; height: 100px;">
-                        <div class="testimonial-text rounded text-center p-4 bg-white shadow-sm">
-                            <p class="mb-3">“This scholarship is a huge blessing for me because it can help me not only
-                                in financial aspects but also in building and developing myself to be more fit in this
-                                industry.”</p>
-                            <h5 class="mb-0">Erica Laus</h5>
-                            <small class="text-muted d-block">1st Year, BS Hospitality Management</small>
-                            <small class="text-muted">Goducate Scholar Laguna</small>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden"
+                            style="background-color: #d7ffd5;">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=380636704908016&show_text=false&autoplay=false"
+                                    style="border: none;" allowfullscreen
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                </iframe>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold text-primary">Ezza D. Mapa</h5>
+                                <p class="text-muted small mb-0">
+                                    2nd-year BS Office Administration<br>
+                                    Laguna State Polytechnic University, Sta. Cruz Main Campus
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 3 -->
-                    <div class="testimonial-item text-center">
-                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-3" src="img/index/3.png"
-                            style="width: 100px; height: 100px;">
-                        <div class="testimonial-text rounded text-center p-4 bg-white shadow-sm">
-                            <p class="mb-3">“The feeding program made a big change for my children. From the time they
-                                got involved in the feeding program, they gained weight. Hopefully, the feeding program
-                                won't stop.”</p>
-                            <h5 class="mb-0">Ana May Badayos</h5>
-                            <small class="text-muted d-block">Mother of Beneficiary</small>
-                            <small class="text-muted">Puypuy Feeding Area</small>
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden"
+                            style="background-color: #d7ffd5;">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=1134332771347623&show_text=false&autoplay=false"
+                                    style="border: none;" allowfullscreen
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                </iframe>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold text-primary">John Patrick M. Oller</h5>
+                                <p class="text-muted small mb-0">
+                                    3rd-year BS Human Ecology, Major in Human Settlement Planning<br>
+                                    University of the Philippines, Los Baños
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 4 -->
-                    <div class="testimonial-item text-center">
-                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-3" src="img/index/4.png"
-                            style="width: 100px; height: 100px;">
-                        <div class="testimonial-text rounded text-center p-4 bg-white shadow-sm">
-                            <p class="mb-3">“As a student, I can't complain about anything more because the Goducate has
-                                given me everything I need as a student. What I need to do is study.”</p>
-                            <h5 class="mb-0">John Gilbertson Acuarda</h5>
-                            <small class="text-muted d-block">2nd Year, BS Biology</small>
-                            <small class="text-muted">Goducate Scholar Laguna</small>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 5 -->
-                    <div class="testimonial-item text-center">
-                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-3" src="img/index/5.png"
-                            style="width: 100px; height: 100px;">
-                        <div class="testimonial-text rounded text-center p-4 bg-white shadow-sm">
-                            <p class="mb-3">“This Goducate program is a big help for me, not only financially but also
-                                morally and spiritually. I hope that you will continue to be a blessing to everyone.”
-                            </p>
-                            <h5 class="mb-0">Joanna Junsay</h5>
-                            <small class="text-muted d-block">3rd Year, Bachelor in Medical Laboratory Science</small>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 6 -->
-                    <div class="testimonial-item text-center">
-                        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-3" src="img/index/6.png"
-                            style="width: 100px; height: 100px;">
-                        <div class="testimonial-text rounded text-center p-4 bg-white shadow-sm">
-                            <p class="mb-3">“Everyday life experiences also shaped who I am now, and the Goducate family
-                                and staff are a huge blessing. I am grateful to be one of the program's beneficiaries.”
-                            </p>
-                            <h5 class="mb-0">Marven Algordo</h5>
-                            <small class="text-muted d-block">2nd Year, AB English Language</small>
-                            <small class="text-muted">Goducate Scholar Laguna</small>
+                    <div class="swiper-slide">
+                        <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden"
+                            style="background-color: #d7ffd5;">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=2006722499772663&show_text=false&autoplay=false"
+                                    style="border: none;" allowfullscreen
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                </iframe>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold text-primary">Mary Rose</h5>
+                                <p class="text-muted small mb-0">
+                                    3rd-year Bachelor of Technology and Livelihood Education,<br>
+                                    Major in Home Economics<br>
+                                    Polytechnic University of the Philippines, Calauan Campus
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Pagination & Navigation -->
+                <div class="swiper-pagination mt-4"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Init -->
+    <script>
+        var swiper = new Swiper(".testimonialSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+    </script>
+
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <!-- Column 1: Logo and Description -->
-                <div class="col-lg-4 col-md-6">
-                    <img src="img/goducatelogo.png" alt="Goducate Logo" style="max-width: 180px;" class="mb-3">
-                    <p class="text-white-50">
-                        Goducate is committed to helping Asians help themselves by empowering communities through
-                        education and support.
-                    </p>
-                </div>
-
-                <!-- Column 2: Contact Info -->
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-light mb-4">Contact</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>Singapore Head Office 360 Dunearn Rd, Singapore
-                        299552</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+63 000 000 0000</p>
-                    <p><i class="fa fa-envelope me-3"></i>reachus@goducate.org</p>
-                </div>
-
-                <!-- Column 3: Social Media -->
-                <div class="col-lg-4 col-md-12">
-                    <h5 class="text-light mb-4">Connect With Us</h5>
-                    <div class="d-flex">
-                        <a class="btn btn-square btn-outline-light me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light me-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light me-2" href="#"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-3 wow fadeIn" data-wow-delay="0.1s">
         <!-- Copyright -->
         <div class="container-fluid copyright text-white-50 border-top py-4">
             <div class="container">

@@ -252,48 +252,54 @@
 }
 
 /*** Team ***/
-.team-item img {
-  position: relative;
-  top: 0;
-  transition: 0.5s;
-}
+ /* Equal height cards */
+    .team-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-.team-item:hover img {
-  top: -30px;
-}
+    /* Hover effect for modern feel */
+    .team-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
 
-.team-item .team-text {
-  position: relative;
-  height: 100px;
-  transition: 0.5s;
-}
+    /* Consistent image size & position */
+    .team-item img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
 
-.team-item:hover .team-text {
-  margin-top: -60px;
-  height: 160px;
-}
+    /* Keep text alignment consistent */
+    .team-item h5 {
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+    }
 
-.team-item .team-text .team-social {
-  opacity: 0;
-  transition: 0.5s;
-}
+    .team-item p.text-primary {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
 
-.team-item:hover .team-text .team-social {
-  opacity: 1;
-}
+    .team-item p.small.text-muted {
+        text-align: justify;
+    }
 
-.team-item .team-social .btn {
-  display: inline-flex;
-  color: var(--primary);
-  background: #ffffff;
-  border-radius: 40px;
-}
-
-.team-item .team-social .btn:hover {
-  color: #ffffff;
-  background: var(--primary);
-}
-
+    /* Ensure equal height columns in row */
+    .row.g-4 > div {
+        display: flex;
+    }
 /*** Footer ***/
 
 .footer .btn.btn-link {
@@ -519,3 +525,45 @@
 #spinner img {
   animation: pulse 3s infinite ease-in-out;
 }
+
+/* Swiper button styling */
+.testimonialSwiper .swiper-button-prev,
+.testimonialSwiper .swiper-button-next {
+  color: #0d6efd;
+  transition: 0.3s;
+}
+
+.testimonialSwiper .swiper-button-prev:hover,
+.testimonialSwiper .swiper-button-next:hover {
+  color: #084298;
+}
+
+.testimonialSwiper .swiper-pagination-bullet-active {
+  background: #0d6efd;
+}
+
+/* Equal height cards inside Swiper */
+.testimonialSwiper .swiper-slide {
+  display: flex;
+  height: auto;
+}
+
+.testimonialSwiper .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.testimonialSwiper .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Ensure video iframe fills container */
+.testimonialSwiper iframe {
+  width: 100%;
+  height: 100%;
+}
+
